@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "2.3.0",
+	"FriendlyName": "EJAI: Lead Technical Director",
+	"Description": "High-fidelity AI Director featuring the Nelson Orchestrator & BettaHuman Harvester.",
+	"Category": "Editor",
+	"CreatedBy": "EJAI_TEAM",
+	"Modules": [
+		{
+			"Name": "EJAI",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		}
+	]
+}
