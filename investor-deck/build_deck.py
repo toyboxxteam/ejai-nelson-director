@@ -2,7 +2,7 @@
 import sys
 from reportlab.pdfgen import canvas
 from dkb_lib import W, H, Page
-import pages_a, pages_b
+import pages_a, pages_b, pages_c
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "DKB_Dr_Ish_Investor_Deck.pdf"
 ONLY = sys.argv[2:] 
@@ -14,7 +14,7 @@ def build():
     c.setSubject("Confidential investor discussion - October 2026")
     p = Page(c)
     seq = [pages_a.page01, pages_a.page02, pages_a.page03a, pages_a.page03b, pages_a.page03c,
-           pages_b.page04, pages_b.page05, pages_b.page06, pages_b.page07a, pages_b.page07b,
+           pages_b.page04, pages_b.page05, pages_b.page06, pages_c.page_ip, pages_c.page_daw, pages_c.page_akai, pages_c.page_value1, pages_c.page_value2, pages_b.page07a, pages_b.page07b,
            pages_b.appx_roster,
            lambda p: pages_b.appx_sheet(p, "A2 / FOUNDER, MUSIC TRACTION & STRATEGIC RELATIONSHIPS", "A2 / A6",
                                         "FOUNDER ONE-SHEET", "MALCOLM \u201cFRQNZY\u201d HENDERSON  /  GOOD KARMA MUSIC GROUP",

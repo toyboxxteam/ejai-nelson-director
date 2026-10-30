@@ -11,7 +11,7 @@ from dkb_lib import *
 # 01  EXECUTIVE SUMMARY
 # =============================================================================
 def page01(p):
-    p.frame("01 / EXECUTIVE SUMMARY & LAUNCH ARCHITECTURE", "01 / 07")
+    p.frame("01 / EXECUTIVE SUMMARY & LAUNCH ARCHITECTURE", "01 / 08")
     # logo row (isolated zone below the running header)
     p.img("i-001.jpg", MX, 128, 48, 48, "contain")
     p.img("i-002.jpg", MX + 64, 136, 72, 40, "contain")
@@ -76,19 +76,22 @@ def page01(p):
     t += 144
 
     # markets
-    t += p.section_bar(t, "WHY THESE MARKETS MATTER", "PUBLIC INDUSTRY DATA / NOT DKB REVENUE")
-    mk = [("$60.8B", "U.S. video game spending, 2025"), ("$31.7B", "Global recorded music, 2025"),
-          ("$25.2B", "Live Nation revenue, 2025")]
+    t += p.section_bar(t, "WHY THESE MARKETS MATTER", "LATEST PUBLISHED DATA, OCT 2026 / NOT DKB REVENUE")
+    mk = [("$60.8B", "U.S. video game spending, FY2025 (ESA, restated Mar 2026)"),
+          ("$31.7B", "Global recorded music, 2025 (IFPI, Mar 2026)"),
+          ("$25.2B", "Live Nation revenue, FY2025 (reported Feb 2026)"),
+          ("$5.4B", "Suno valuation, Series D, Jun 2026 (~$300M ARR)")]
+    c4 = (CW - 3 * 12) / 4.0
     for i, (v, l) in enumerate(mk):
-        x = MX + i * (cw + 16)
-        p.rect(x, t, cw, 64, fill=PALE, stroke=LINE, r=4)
-        p.text(x + 16, t + 36, v, DISPLAY, 26, NAVY)
-        p.text(x + 16, t + 54, l, "Body-B", 8.5, GREY)
-    t += 76
+        x = MX + i * (c4 + 12)
+        p.rect(x, t, c4, 72, fill=NAVY if i == 3 else PALE, stroke=None if i == 3 else LINE, r=4)
+        p.text(x + 14, t + 32, v, DISPLAY, 24, SKY if i == 3 else NAVY)
+        p.para(x + 14, t + 40, c4 - 28, l, S("mk", 7.5, 9.5, HexColor("#C9DDF5") if i == 3 else GREY, "Body-B"))
+    t += 84
     t += p.para(MX, t, CW, "<b>Investment framing:</b> DKB's launch involves both active music collaborations and an "
                 "ambitious platform roadmap. Commercial performance depends on execution, rights, delivery and costs. "
-                "Public market sizes are context, not DKB sales or valuation. Sources: ESA (revised 2025 figures); "
-                "IFPI Global Music Report 2026; Live Nation FY2025.", "small")
+                "Public market sizes are context, not DKB sales or valuation. Sources: ESA (2025 data, restated Mar 2026); "
+                "IFPI Global Music Report 2026; Live Nation FY2025 results; Suno Series D (Jun 2026).", "small")
     t = s8(t + 16)
 
     # milestone gate
@@ -114,7 +117,7 @@ def page01(p):
 # 02  FOUNDER & TRACTION
 # =============================================================================
 def page02(p):
-    p.frame("02 / FOUNDER, CREDIBILITY & LAUNCH", "02 / 07")
+    p.frame("02 / FOUNDER, CREDIBILITY & LAUNCH", "02 / 08")
     t = CONTENT_TOP
     t = p.title(t, "MUSIC, MUSIC, MORE MUSIC", None,
                 "The founder's music, existing chart history and booked collaborations are the marketing engine "
@@ -199,7 +202,7 @@ def _roster_block(p, x, t, w, label, sub, items, fill, color):
 
 
 def page03a(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 07")
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08")
     t = CONTENT_TOP
     t = p.title(t, "THE DAKICKBACK TOUR", "TURNKEY TALENT ENGINE & LIVE NATION DISTRIBUTION",
                 "The DKB Tour pairs legendary and elite contemporary talent directly with FRQNZY collaborations, turning "
@@ -351,7 +354,7 @@ def flywheel(p, cx, cy, r):
 
 
 def page03b(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 07", cont=True)
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08", cont=True)
     t = CONTENT_TOP
     p.rect(MX, t, 28, 28, fill=BLUE, r=14)
     p.text(MX + 14, t + 19, "3", DISPLAY, 13, white, "c")
@@ -423,7 +426,7 @@ def page03b(p):
 
 
 def page03c(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 07", cont=True)
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08", cont=True)
     t = CONTENT_TOP
     # flywheel + rider
     t += p.section_bar(t, "THE FLYWHEEL & THE ARTIST RIDER", "14–121 DAY CAMPAIGN WINDOW")

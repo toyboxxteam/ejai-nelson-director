@@ -19,7 +19,7 @@ def num_bar(p, t, n, label):
 # 04  DKB WEB / TICKETING / CREATOR ECONOMY
 # =============================================================================
 def page04(p):
-    p.frame("04 / DKB WEB, TICKETING & CREATOR ECONOMY", "04 / 07")
+    p.frame("04 / DKB WEB, TICKETING & CREATOR ECONOMY", "04 / 08")
     t = CONTENT_TOP
     t = p.title(t, "ONE FAN. MANY PATHWAYS.", None,
                 "The planned web / mobile core integrates music, social feeds, tickets, games, video, creator tools and "
@@ -102,7 +102,7 @@ def page04(p):
 # 05  WELCOME 2 WESTVILLE
 # =============================================================================
 def page05(p):
-    p.frame("05 / FLAGSHIP INTERACTIVE WORLD", "05 / 07")
+    p.frame("05 / FLAGSHIP INTERACTIVE WORLD", "05 / 08")
     t = CONTENT_TOP
     t = p.title(t, "WELCOME 2 WESTVILLE", None,
                 "Hero: Malcolm Samir. Aspirational cinematic quality, a living seven-city framework and interlocking career "
@@ -186,7 +186,7 @@ def page05(p):
 # 06  LEGEND OF FRQNZY + TOYBOXX
 # =============================================================================
 def page06(p):
-    p.frame("06 / ORIGINAL GAME IP + HARDWARE + DISTRIBUTION", "06 / 07")
+    p.frame("06 / ORIGINAL GAME IP + HARDWARE + DISTRIBUTION", "06 / 08")
     t = CONTENT_TOP
     t = p.title(t, "LEGEND OF FRQNZY + TOYBOXX", None,
                 "Two complementary opportunities: an independent fantasy world and a connected physical console. Fantasy "
@@ -292,7 +292,7 @@ def donut(p, cx, cy, ro, ri, vals, cols):
 
 
 def page07a(p):
-    p.frame("07 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "07 / 07")
+    p.frame("08 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "08 / 08")
     t = CONTENT_TOP
     t = p.title(t, "THE $2M LAUNCH ECONOMICS", None,
                 "Four adoption cases illustrate potential gross activity, not investor cash returns. Execution and reporting "
@@ -384,7 +384,7 @@ def page07a(p):
 
 
 def page07b(p):
-    p.frame("07 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "07 / 07", cont=True)
+    p.frame("08 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "08 / 08", cont=True)
     t = CONTENT_TOP
     t += p.section_bar(t, "GREAT • GOOD • STANDARD • BAD", "GROSS CUSTOMER SPENDING, NOT PROFIT")
     cases = [("BAD", 100, 5000, 250, 2, 600, 55), ("STANDARD", 500, 15000, 1000, 4, 1200, 65),
@@ -443,7 +443,7 @@ def page07b(p):
     t += p.section_bar(t, "PUBLIC MARKET CONTEXT / NO INFERRED DKB VALUATION", "INDEPENDENT REPORTING")
     p.img("i-130c.png", MX, t, CW, 112, "contain")
     t += 128
-    t += p.para(MX, t, CW, "Suno is a market signal, not a DKB valuation. Its financing illustrates music-technology demand; DKB "
+    t += p.para(MX, t, CW, "Suno ($5.4B, Jun 2026, ~$300M ARR) is a market signal, not a DKB valuation. Its financing illustrates music-technology demand; DKB "
                 "links recorded music, ticketing, games and hardware, with additional execution complexity. The national PR plan "
                 "calls for a Dubai team photo and Forbes pitch, followed by TV / press outreach including Kimmel and Fallon, with "
                 "Malcolm, Teddy Riley, Evan Shive, Dr. Ish and the DKB team. Media placements depend on editorial acceptance and "
@@ -589,7 +589,8 @@ def appx_notice(p):
         ("DEFINED TERMS", "“Defined net” tour and merchandise receipts, publishing participation, the $75,000 label milestone "
          "bonus, draw schedule and reporting will be fixed in a written agreement reviewed by counsel. The 1% publishing "
          "participation is not catalog ownership."),
-        ("SOURCES", "ESA (revised 2025 figures); IFPI Global Music Report 2026; Live Nation FY2025; Suno (Jun 2026); Walt Reeder "
+        ("SOURCES", "ESA (2025 data, restated Mar 2026); IFPI Global Music Report 2026; Live Nation FY2025 (Feb 2026); Suno Series D (Jun 2026) and "
+         "ElevenLabs Series D (Feb 2026) per trade press; Roblox FY2025 annual report; published DAW market estimates ($2.2\u20134.4B); Walt Reeder "
          "Entertainment 2026 roster (R&amp;B, Hip Hop &amp; Rap, $10K–$15K lists); DKB management October 2026 tour update; "
          "user-supplied founder photographs, chart captures, tour artwork and game / hardware designs. Fortnite and Roblox "
          "attendance figures are as publicly reported by Epic Games and Roblox in 2020.")]
