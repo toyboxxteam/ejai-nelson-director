@@ -7,7 +7,7 @@ from reportlab.platypus import Paragraph
 
 from dkb_lib import *
 
-TRACK = "07 / IP PORTFOLIO, DAW & VALUATION"
+TRACK = "08 / IP PORTFOLIO, DAW & VALUATION"
 DARK = HexColor("#0D1B3A")
 GREEN_BG, GREEN_FG = HexColor("#D9F5E8"), HexColor("#0A7A4B")
 AMBER_BG, AMBER_FG = HexColor("#FFF0CF"), HexColor("#8A5A00")
@@ -91,7 +91,7 @@ IP = [
 
 
 def page_ip(p):
-    p.frame(TRACK, "07 / 08")
+    p.frame(TRACK, "08 / 09")
     t = CONTENT_TOP
     t = p.title(t, "EVERY TAB IS AN ASSET", "THE DKB IP PORTFOLIO",
                 "DKB is not one app. Each module below is a separately ownable product with its own brand, code, data and "
@@ -165,7 +165,7 @@ def daw_mock(p, x, t, w, h):
 
 
 def page_daw(p):
-    p.frame(TRACK, "07 / 08", cont=True)
+    p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
     t = p.title(t, "BEAT LABZ: THE DKB DAW", "FLAGSHIP CREATOR-TOOL IP  •  AI-NATIVE  •  PAD-FIRST",
                 "FL Studio taught a generation to make beats on a laptop; Suno proved AI music is a venture-scale category. "
@@ -221,7 +221,7 @@ def page_daw(p):
 
 
 def page_akai(p):
-    p.frame(TRACK, "07 / 08", cont=True)
+    p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
     t = p.title(t, "THE AKAI ASK", "WHAT TO NEGOTIATE FOR: TEDDY RILEY x AKAI PROFESSIONAL x BEAT LABZ",
                 "A signature-edition deal is only as good as its terms. This is the framework for what DKB should request, in "
@@ -274,7 +274,7 @@ def page_akai(p):
 # 07C  VALUATION I: comps, what must be true, scenarios
 # =============================================================================
 def page_value1(p):
-    p.frame(TRACK, "07 / 08", cont=True)
+    p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
     t = p.title(t, "WHAT $2M LAUNCHES, AND WHAT IT CAN BE WORTH", "AN HONEST VALUATION FRAMEWORK",
                 "The $2M launches the company; it does not claim to value it. DKB is pre-revenue today. Below is how Silicon Valley "
@@ -353,7 +353,7 @@ def page_value1(p):
 # 07D  VALUATION II: equity reference, what $2M buys, ladder
 # =============================================================================
 def page_value2(p):
-    p.frame(TRACK, "07 / 08", cont=True)
+    p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
     t = p.title(t, "WHAT THE $2M BUYS: AND WHAT IT DOESN'T", "BE UPFRONT. EARN THE NEXT STEP.",
                 "The $2M launches proof across the portfolio. It does not finish a console, a flagship open-world game and a "

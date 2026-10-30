@@ -19,7 +19,7 @@ def num_bar(p, t, n, label):
 # 04  DKB WEB / TICKETING / CREATOR ECONOMY
 # =============================================================================
 def page04(p):
-    p.frame("04 / DKB WEB, TICKETING & CREATOR ECONOMY", "04 / 08")
+    p.frame("04 / DKB WEB, TICKETING & CREATOR ECONOMY", "04 / 09")
     t = CONTENT_TOP
     t = p.title(t, "ONE FAN. MANY PATHWAYS.", None,
                 "The planned web / mobile core integrates music, social feeds, tickets, games, video, creator tools and "
@@ -102,7 +102,7 @@ def page04(p):
 # 05  WELCOME 2 WESTVILLE
 # =============================================================================
 def page05(p):
-    p.frame("05 / FLAGSHIP INTERACTIVE WORLD", "05 / 08")
+    p.frame("05 / FLAGSHIP INTERACTIVE WORLD", "05 / 09")
     t = CONTENT_TOP
     t = p.title(t, "WELCOME 2 WESTVILLE", None,
                 "Hero: Malcolm Samir. Aspirational cinematic quality, a living seven-city framework and interlocking career "
@@ -186,7 +186,7 @@ def page05(p):
 # 06  LEGEND OF FRQNZY + TOYBOXX
 # =============================================================================
 def page06(p):
-    p.frame("06 / ORIGINAL GAME IP + HARDWARE + DISTRIBUTION", "06 / 08")
+    p.frame("06 / ORIGINAL GAME IP + HARDWARE + DISTRIBUTION", "06 / 09")
     t = CONTENT_TOP
     t = p.title(t, "LEGEND OF FRQNZY + TOYBOXX", None,
                 "Two complementary opportunities: an independent fantasy world and a connected physical console. Fantasy "
@@ -250,7 +250,7 @@ def page06(p):
     hh = p.cards_row(MX, t, CW, [
         ("CREATION LAYER", "UE / Blender-centered prompt and pipeline automation for environments, assets, build management "
          "and technical QA. Claimed 1,200+ skills and 3–6 month AAA completion are not independently validated."),
-        ("INFRASTRUCTURE", "Evan Shive contributes to the proposed Teleric access and connectivity strategy. Festival-scale "
+        ("INFRASTRUCTURE", "Evan Shive contributes to the proposed Teleric access and connectivity strategy (see section 07). Festival-scale "
          "Wi-Fi, edge delivery and commercial media streaming must be engineered, budgeted and contracted.", NAVY),
         ("LIVE STREAMING", "A strong production opportunity: virtual events, live fan participation, venue internet services "
          "and paid platform access for third-party broadcasters, with rights and capacity tested first.")],
@@ -292,7 +292,7 @@ def donut(p, cx, cy, ro, ri, vals, cols):
 
 
 def page07a(p):
-    p.frame("08 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "08 / 08")
+    p.frame("09 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "09 / 09")
     t = CONTENT_TOP
     t = p.title(t, "THE $2M LAUNCH ECONOMICS", None,
                 "Four adoption cases illustrate potential gross activity, not investor cash returns. Execution and reporting "
@@ -384,7 +384,7 @@ def page07a(p):
 
 
 def page07b(p):
-    p.frame("08 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "08 / 08", cont=True)
+    p.frame("09 / FINANCING, SCENARIOS & INVESTOR PROTECTION", "09 / 09", cont=True)
     t = CONTENT_TOP
     t += p.section_bar(t, "GREAT • GOOD • STANDARD • BAD", "GROSS CUSTOMER SPENDING, NOT PROFIT")
     cases = [("BAD", 100, 5000, 250, 2, 600, 55), ("STANDARD", 500, 15000, 1000, 4, 1200, 65),
@@ -592,7 +592,7 @@ def appx_notice(p):
         ("SOURCES", "ESA (2025 data, restated Mar 2026); IFPI Global Music Report 2026; Live Nation FY2025 (Feb 2026); Suno Series D (Jun 2026) and "
          "ElevenLabs Series D (Feb 2026) per trade press; Roblox FY2025 annual report; published DAW market estimates ($2.2\u20134.4B); Walt Reeder "
          "Entertainment 2026 roster (R&amp;B, Hip Hop &amp; Rap, $10K–$15K lists); DKB management October 2026 tour update; "
-         "user-supplied founder photographs, chart captures, tour artwork and game / hardware designs. Fortnite and Roblox "
+         "Teleric pitch deck 2025 (FCC Form 477 data as cited by Teleric); user-supplied founder photographs, chart captures, tour artwork and game / hardware designs. Fortnite and Roblox "
          "attendance figures are as publicly reported by Epic Games and Roblox in 2020.")]
     for a, b in blocks:
         h = p.card_h(CW - 4, a, b, 14, "cardk")

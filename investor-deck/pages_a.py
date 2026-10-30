@@ -11,7 +11,7 @@ from dkb_lib import *
 # 01  EXECUTIVE SUMMARY
 # =============================================================================
 def page01(p):
-    p.frame("01 / EXECUTIVE SUMMARY & LAUNCH ARCHITECTURE", "01 / 08")
+    p.frame("01 / EXECUTIVE SUMMARY & LAUNCH ARCHITECTURE", "01 / 09")
     # logo row (isolated zone below the running header)
     p.img("i-001.jpg", MX, 128, 48, 48, "contain")
     p.img("i-002.jpg", MX + 64, 136, 72, 40, "contain")
@@ -117,7 +117,7 @@ def page01(p):
 # 02  FOUNDER & TRACTION
 # =============================================================================
 def page02(p):
-    p.frame("02 / FOUNDER, CREDIBILITY & LAUNCH", "02 / 08")
+    p.frame("02 / FOUNDER, CREDIBILITY & LAUNCH", "02 / 09")
     t = CONTENT_TOP
     t = p.title(t, "MUSIC, MUSIC, MORE MUSIC", None,
                 "The founder's music, existing chart history and booked collaborations are the marketing engine "
@@ -202,7 +202,7 @@ def _roster_block(p, x, t, w, label, sub, items, fill, color):
 
 
 def page03a(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08")
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 09")
     t = CONTENT_TOP
     t = p.title(t, "THE DAKICKBACK TOUR", "TURNKEY TALENT ENGINE & LIVE NATION DISTRIBUTION",
                 "The DKB Tour pairs legendary and elite contemporary talent directly with FRQNZY collaborations, turning "
@@ -354,7 +354,7 @@ def flywheel(p, cx, cy, r):
 
 
 def page03b(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08", cont=True)
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 09", cont=True)
     t = CONTENT_TOP
     p.rect(MX, t, 28, 28, fill=BLUE, r=14)
     p.text(MX + 14, t + 19, "3", DISPLAY, 13, white, "c")
@@ -426,7 +426,7 @@ def page03b(p):
 
 
 def page03c(p):
-    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 08", cont=True)
+    p.frame("03 / LIVE ENTERTAINMENT & GLOBAL TOURING FLYWHEEL", "03 / 09", cont=True)
     t = CONTENT_TOP
     # flywheel + rider
     t += p.section_bar(t, "THE FLYWHEEL & THE ARTIST RIDER", "14–121 DAY CAMPAIGN WINDOW")
