@@ -358,27 +358,29 @@ def page_value2(p):
     t = p.title(t, "WHAT THE $2M BUYS: AND WHAT IT DOESN'T", "BE UPFRONT. EARN THE NEXT STEP.",
                 "The $2M launches proof across the portfolio. It does not finish a console, a flagship open-world game and a "
                 "full platform; it funds the gates that earn the right to raise or fund those.", size=30)
-    cw2 = (CW - 16) / 2.0
-    left = ["Ticket portal live and a 4–8 date tour with Walt Reeder talent",
-            "365-song radio-first rollout in tour markets, with FM and creator pushes",
-            "Playable Westville slice and DKB web / ticketing core",
-            "Beat Labz alpha and the Akai framework negotiated and papered",
-            "ToyBoxx controller verification and functional prototype gates",
-            "Legal, KYC / compliance, rider contracts and live-event escrow"]
-    right = ["A finished AAA open-world game: such titles are typically budgeted in the hundreds of millions",
-             "Console mass production: needs certified prototypes, audited BOM and tooling capital",
-             "All 13 tabs at consumer scale: each is sequenced behind its proof gate",
-             "Guaranteed investor returns: figures are management estimates, not promises",
-             "Any valuation claim today: DKB is pre-revenue and has no independent appraisal"]
-    hl = p.bullets_h(cw2 - 32, left, "bulc") + 56
-    hr = p.bullets_h(cw2 - 32, right, "bulc") + 56
-    h = s8(max(hl, hr))
-    for i, (ttl, items, col) in enumerate((("WHAT $2M LAUNCHES", left, GREEN), ("WHAT $2M DOES NOT BUY", right, RED))):
-        x = MX + i * (cw2 + 16)
-        p.rect(x, t, cw2, h, fill=PALE, stroke=LINE, r=4)
-        p.rect(x, t, cw2, 5, fill=col)
-        p.text(x + 16, t + 30, ttl, "Body-B", 9.5, NAVY, cs=0.5)
-        p.bullets(x + 16, t + 42, cw2 - 32, items, "bulc")
+    cols = [("ITEM", 150, "l"), ("WHAT THE $2M COVERS", 300, "l"), ("WHAT IT DOES NOT COVER, AND THE NEXT STEP", 246, "l")]
+    rows = [
+        ["<b>A finished AAA open-world game</b>",
+         "The Westville vertical slice and the DKB web core (from the $450K line): map-bible reconciliation, in-engine block-outs, hero character, "
+         "driving loop, first district, and a playable Unreal Engine slice for investors.",
+         "The full game. AAA open worlds are typically budgeted in the hundreds of millions. Next step: follow-on capital against the slice."],
+        ["<b>Consoles (first batch of 10 prototypes)</b>",
+         "Tooling, ToyBoxxOS architecture and controller verification prototypes (from the $350K line), enough for a first batch of working units "
+         "(10 units: confirm count).",
+         "Mass production. Needs certified prototypes (FCC / CE), an audited bill of materials and tooling capital. Next step: gate 5 pilot run."],
+        ["<b>All 13 tabs</b>",
+         "The tabs that drive revenue first: DKB Ticket, profiles, Hot 100 / discovery and commerce, built into the web core and ticket portal "
+         "that the tour needs.",
+         "Every tab at consumer scale. Each remaining tab is sequenced behind its proof gate (see the IP register)."],
+        ["<b>Investor returns</b>",
+         "The protections: priority recoupment from defined net tour and merchandise, 50 / 50 afterward, 1% publishing, milestone draws, escrow, "
+         "monthly reporting and audit.",
+         "A guarantee. Figures are management estimates, not promises; results depend on ticket demand, costs and executed agreements."],
+        ["<b>A valuation</b>",
+         "The evidence that lets a value be set: tour settlements, DKB accounts, a Beat Labz beta and first recurring revenue.",
+         "A valuation claim today: DKB is pre-revenue with no independent appraisal. Next step: an independent valuation once gates are met."],
+    ]
+    h = table(p, MX, t, cols, rows)
     t += h + 24
 
     # ladder

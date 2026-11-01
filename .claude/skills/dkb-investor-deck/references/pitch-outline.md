@@ -23,6 +23,6 @@ Goal: leave the investor believing three things: the $2M is protected, the portf
 5. *Why not equity?* Current terms are the waterfall; equity or IP-licence participation can be negotiated.
 6. *Is Akai signed?* Pending, no public announcement; the page is a negotiating framework.
 7. *Is KickCoin a security / money transmitter?* Closed-loop, spend-only, licensed partner holds funds; counsel to confirm.
-8. *Does $2M build Westville and ToyBoxx?* No; it funds the slice and prototype gates; page 08 spells out what it does not buy.
+8. *Does $2M build Westville and ToyBoxx?* It covers the Westville slice and a first batch of prototype consoles (count to confirm); the page 08 table shows, item by item, what the $2M covers and what needs follow-on capital.
 9. *What is Teleric and who is Evan?* Fiber ISP, Illinois pilot, claims need verification; relationship to be papered.
 10. *What can go wrong?* Rights clearance, ticket demand, hardware certification, AI-music litigation, licensing for payments; each has a gate or guardrail in the deck.
