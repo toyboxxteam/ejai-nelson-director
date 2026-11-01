@@ -18,6 +18,8 @@
 
 | Astra Tech (per astratech.ae, pasted by user Nov 2026): est. 2022; parent of botim; 150M+ users in 155 countries (company claim); acquired PayBy Aug 2022, botim Jan 2023; $500M raise led by G42 Dec 2022; botim 3.0 May 2023; botim finance first UAE fintech with full CBUAE Finance Company License Jul 2024; PayBy -> botim money for business and CashNow -> botim finance Jul 2025; botim invest lists gold, bonds, digital assets | Company website; capabilities are the company's own description |
 
+| Tour flyers (user-supplied, Nov 2026): Thu Nov 12 Portsmouth VA, Serenity 5 Lounge (FRQNZY + Slim from 112, DJ Kidd, "Tha Vibe", Eventbrite); Thu Dec 31 Hampton VA (FRQNZY x GloRilla, "Unmatched", doors 9 PM, tickets on sale). Flyers say "Walt Reed" (agency is Walt Reeder Entertainment). Dec 31 is exactly 60 days after Nov 1, 2026 | Public flyers prove announcement only; executed riders, venue contracts and capacities still to confirm |
+
 ## Management-reported (label as such)
 Slim (112) and AMG Twins booked; Teddy Riley producing "All Good" with Ty Dolla $ign; Billboard chart appearances (exact weeks pending); 1,500+ master vault; tour net-to-DKB estimates ($140K / $750K / $2.15M / $4.2M); Walt Reeder wholesale pricing; Live Nation as target channel; Akai sponsorship via Teddy Riley (pending, no public announcement found); Teleric specs (1 Gbps symmetric, ~5 ms, ~$500/home, nano-trench, "patented").
 
@@ -25,6 +27,7 @@ Slim (112) and AMG Twins booked; Teddy Riley producing "All Good" with Ty Dolla 
 Reserve or gold-backing for DKCoin; ToyBoxx $149.99 margin (BOM target $125 unverified); 12-24 month recovery horizon; Botim/KickCoin integration terms; Teleric's "$20B for 10% of households" (does not reconcile with its own $70/mo price: ~$10.8B).
 
 ## Open items
+0. **Flyer typo**: both flyers read "Walt Reed"; agency is Walt Reeder Entertainment. Fix before wider distribution. Hampton flyer names no venue.
 1. **Investor name**: Dr. Ish vs Dr. Chad (replacement or second investor?). Use `--investor`.
 2. **"The Bitom"** = **Botim** (Astra Tech), confirmed by the user's screenshot and pasted site text. Still confirm what Botim has actually offered DKB. astratech.ae is blocked from the cloud session, so content arrives by paste.
 3. **Evan Shive vs Teleric**: Teleric's deck names Khaliq Rehman as founder and never mentions DKB or Evan Shive. Paper the relationship before relying on it.

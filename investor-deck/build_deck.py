@@ -11,7 +11,7 @@ os.environ["DKB_INVESTOR"] = args.investor   # must be set before dkb_lib is imp
 
 from reportlab.pdfgen import canvas
 from dkb_lib import W, H, Page, sub
-import pages_a, pages_b, pages_c, pages_d, pages_e
+import pages_a, pages_b, pages_c, pages_d, pages_e, pages_f
 
 OUT = args.out or "DKB_%s_Investor_Deck.pdf" % args.investor.replace(".", "").replace(" ", "_")
 
@@ -22,7 +22,7 @@ def build():
     c.setAuthor("DAKICKBACK LLC")
     c.setSubject("Confidential investor discussion - October 2026")
     p = Page(c)
-    seq = [pages_a.page01, pages_a.page02, pages_a.page03a, pages_a.page03b, pages_a.page03c,
+    seq = [pages_a.page01, pages_a.page02, pages_a.page03a, pages_a.page03b, pages_a.page03c, pages_f.page_dates, pages_f.page_seq,
            pages_b.page04, pages_b.page05, pages_b.page06, pages_d.page_t1, pages_d.page_t2, pages_d.page_t3, pages_e.page_b1, pages_e.page_b2, pages_c.page_ip, pages_c.page_daw, pages_c.page_akai, pages_c.page_value1, pages_c.page_value2, pages_b.page07a, pages_b.page07b,
            pages_b.appx_roster,
            lambda p: pages_b.appx_sheet(p, "A2 / FOUNDER, MUSIC TRACTION & STRATEGIC RELATIONSHIPS", "A2 / A6",

@@ -174,7 +174,7 @@ def page02(p):
         ("365-SONG CAMPAIGN / ALBUM", "A 365-day sequence of original multi-genre songs is designed for Guinness World "
          "Records consideration. A 17-song Teddy Riley / FRQNZY album is in development; management reports Teddy is "
          "currently producing “All Good” featuring Teddy Riley and Ty Dolla $ign."),
-        ("FEATURED RELEASE PIPELINE", "“The Vibe” with Slim (112); “Love Don't Live Here” with AMG Twins; "
+        ("FEATURED RELEASE PIPELINE", "“Tha Vibe” with Slim (112); “Love Don't Live Here” with AMG Twins; "
          "“DaKickBack” featuring Future; “Unmatched” featuring GloRilla; “Victim” featuring "
          "Krayzie Bone. Status varies by recording and agreement.")], bar="left", fill=ICE)
     t += hh + 8
@@ -454,7 +454,7 @@ def page03c(p):
     p.rect(MX, t, CW, 88, fill=NAVY, r=6)
     p.text(MX + 20, t + 26, "THE HOT-TRIGGER PLAYBOOK", "Body-B", 9, SKY, cs=0.8)
     trig = [("JOINT SINGLE + VIDEO", "drops in each tour market"),
-            ("~69 DAYS OUT", "planning benchmark inside the 14\u2013121-day window"),
+            ("~60 DAYS OUT", "planning benchmark inside the 14\u2013121-day window"),
             ("LOCAL FM + CREATORS", "radio-first demand before the tour arrives"),
             ("CO-HEADLINE MOMENT", "FRQNZY + headliner perform the record together")]
     tw = (CW - 40) / 4.0
@@ -536,7 +536,7 @@ def page03b_pr(p, t):
     # booking status
     t += p.section_bar(t, "BOOKING STATUS & CONTRACT DELIVERABLES", "SLIM (112) + AMG TWINS BOOKED (MANAGEMENT-REPORTED)")
     cw2 = (CW - 16) / 2.0
-    for i, (a_, b_) in enumerate((("SLIM (112)", "Booked for \u201cThe Vibe\u201d"), ("AMG TWINS", "Booked for \u201cLove Don't Live Here\u201d"))):
+    for i, (a_, b_) in enumerate((("SLIM (112)", "Booked for \u201cTha Vibe\u201d"), ("AMG TWINS", "Booked for \u201cLove Don't Live Here\u201d"))):
         x = MX + i * (cw2 + 16)
         p.rect(x, t, cw2, 56, fill=PALE, stroke=LINE, r=4)
         p.text(x + 16, t + 24, a_, DISPLAY, 12, NAVY)
@@ -544,12 +544,12 @@ def page03b_pr(p, t):
         p.chip(x + cw2 - 16 - 62, t + 18, "BOOKED", fill=HexColor("#D9F5E8"), color=HexColor("#0A7A4B"), size=8, h=20)
     t += 72
     p.text(MX, t + 8, "IN ACTIVE PROGRAMMING DISCUSSIONS", "Body-B", 8.5, NAVY, cs=0.4)
-    h = p.chips(MX, t + 20, CW, ["GloRilla", "G-Herbo", "Sexyy Red", "Bossman Dlow", "Future", "Teddy Riley", "Bone Thugs-N-Harmony",
+    h = p.chips(MX, t + 20, CW, ["G-Herbo", "Sexyy Red", "Bossman Dlow", "Future", "Teddy Riley", "Bone Thugs-N-Harmony",
                                   "Luh Tyler", "Key Glock", "Babyface Ray"], fill=ICE, color=NAVY, h=22, size=8.5)
     t = s8(t + 20 + h + 12)
     t += p.para(MX, t, CW, "DKB's artist agreements are structured to include a FRQNZY feature, visual content, an artist "
                 "profile and promotion for a negotiated 14\u2013121-day campaign. Specific deal deliverables are governed by each "
-                "artist's contract.", "small")
+                "artist's contract. GloRilla is announced for Hampton, Dec 31 (see tour dates).", "small")
     t = s8(t + 8)
     p.text(MX, t + 8, "Source: DKB management's October 2026 tour update and Walt Reeder Entertainment 2026 roster; "
            "booking status supplied by management.", "Body-I", 7, GREY)

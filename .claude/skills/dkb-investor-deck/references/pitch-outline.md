@@ -7,7 +7,7 @@ Goal: leave the investor believing three things: the $2M is protected, the portf
 | 0-1 | Thank + frame | "You offered $2M. Here is exactly how it launches DKB and how you get paid first." | 01 |
 | 1-3 | The deal | $2M cap; 100% of defined net tour + merch to principal first; then permanent 50/50; 1% publishing on 365 songs; $75K label bonus. | 01, 09 |
 | 3-5 | Why now | Markets: $60.8B games, $31.7B music, $25.2B Live Nation; Suno $5.4B shows AI-music demand. Context, not our revenue. | 01, 08 |
-| 5-7 | Engine | Radio-first single, Walt Reeder roster at wholesale, DKB ticket funnel; scenarios and net vs $2M. | 03 |
+| 5-7 | Engine | Radio-first single, 60-day sequence (Hampton Dec 31 is day 0), Walt Reeder roster at wholesale, DKB ticket funnel; scenarios and net vs $2M. Show the two flyers. | 03 |
 | 7-9 | Platform = IP | 19 IP lines, each a ownable asset with a proof gate; Beat Labz DAW + Akai ask. | 04, 08 |
 | 9-10 | Games + hardware | Westville slice, Legend, ToyBoxx gates. | 05, 06 |
 | 10-11 | Teleric (+ Botim when added) | Own the pipe: symmetric upload, latency, bundles; licensed wallet for KickCoin. State the fine print yourself. | 07 |
