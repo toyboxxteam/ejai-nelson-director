@@ -321,7 +321,7 @@ def page07a(p):
     p.rect(MX, t, 440, 88, fill=NAVY, r=6)
     p.text(MX + 20, t + 26, "TIER 1  •  PRIORITY RECOUPMENT", "Body-B", 9, SKY, cs=0.7)
     p.text(MX + 20, t + 56, "100%", DISPLAY, 28, white)
-    p.para(MX + 112, t + 34, 308, "of defined net tour and merchandise receipts flow directly to Dr. Ish until the "
+    p.para(MX + 112, t + 34, 308, "of defined net tour and merchandise receipts flow directly to @@INV@@ until the "
            "<b>$2,000,000 principal</b> is fully returned.", "white")
     p.arrow(MX + 220, t + 92, MX + 220, t + 112, GOLD, 2.4, 8)
     p.rect(MX, t + 116, 440, 88, fill=BLUE, r=6)
@@ -446,13 +446,13 @@ def page07b(p):
     t += p.para(MX, t, CW, "Suno ($5.4B, Jun 2026, ~$300M ARR) is a market signal, not a DKB valuation. Its financing illustrates music-technology demand; DKB "
                 "links recorded music, ticketing, games and hardware, with additional execution complexity. The national PR plan "
                 "calls for a Dubai team photo and Forbes pitch, followed by TV / press outreach including Kimmel and Fallon, with "
-                "Malcolm, Teddy Riley, Evan Shive, Dr. Ish and the DKB team. Media placements depend on editorial acceptance and "
+                "Malcolm, Teddy Riley, Evan Shive, @@INV@@ and the DKB team. Media placements depend on editorial acceptance and "
                 "scheduling. Research: theesa.com (2025 restated); ifpi.org (Mar 2026); news.livenationentertainment.com (FY25); "
                 "suno.com (Jun 2026).", "src")
     t = s8(t + 16)
 
     t = s8(t + 16)
-    t += p.section_bar(t, "MONTHLY INVESTOR SCORECARD", "REPORTED TO DR. ISH EVERY MONTH")
+    t += p.section_bar(t, "MONTHLY INVESTOR SCORECARD", "REPORTED TO @@INVU@@ EVERY MONTH")
     kp = [("DKB ACCOUNTS", "Registrations created per tour date and per market"),
           ("TICKET SELL-THROUGH", "Paid tickets vs. capacity and average ticket price"),
           ("NET vs. ESTIMATE", "Defined net per date against the management estimate"),
@@ -574,7 +574,7 @@ def appx_notice(p):
     p.frame("A6 / IMPORTANT NOTICE, SOURCES & DEFINITIONS", "A6 / A6")
     t = CONTENT_TOP
     t = p.title(t, "IMPORTANT NOTICE", None,
-                "This document is a confidential discussion draft prepared by DaKickBack LLC for Dr. Ish. It is not an offer "
+                "This document is a confidential discussion draft prepared by DaKickBack LLC for @@INV@@. It is not an offer "
                 "to sell, or a solicitation of an offer to buy, any security.")
     blocks = [
         ("FORWARD-LOOKING INFORMATION", "Projections, scenarios, tour estimates, net-to-DKB figures, margins and timelines are "
@@ -604,6 +604,6 @@ def appx_notice(p):
     p.img("i-003.jpg", MX + 28, t + 16, 120, 80, "contain")
     p.text(MX + 176, t + 44, "DAKICKBACK LLC", DISPLAY, 20, white)
     p.text(MX + 176, t + 66, "GOOD KARMA MUSIC GROUP  /  REAL MUSIC MATTERS", "Body-B", 8.5, SKY, cs=0.8)
-    p.text(MX + 176, t + 86, "Prepared for Dr. Ish  •  October 2026  •  Confidential", "Body", 9, HexColor("#C9DDF5"))
+    p.text(MX + 176, t + 86, "Prepared for @@INV@@  •  October 2026  •  Confidential", "Body", 9, HexColor("#C9DDF5"))
     t += 112
     p.check(t, "appx_notice")

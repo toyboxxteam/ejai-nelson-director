@@ -12,6 +12,13 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+INVESTOR = os.environ.get("DKB_INVESTOR", "Dr. Ish")   # set via build_deck.py --investor
+
+
+def sub(s):
+    """Resolve investor-name tokens at render time so one source builds any investor's copy."""
+    return s.replace("@@INVU@@", INVESTOR.upper()).replace("@@INV@@", INVESTOR)
+
 ASSETS = os.path.join(HERE, "assets")
 
 # ---- page geometry (11 x 17 in) -------------------------------------------------
@@ -118,6 +125,7 @@ class Page:
 
     def text(self, x, t, s, font="Body", size=9, color=INK, align="l", cs=0):
         c = self.c
+        s = sub(s)
         c.saveState()
         c.setFillColor(color)
         tx = c.beginText()
@@ -136,14 +144,14 @@ class Page:
 
     def para(self, x, t, w, txt, style="body"):
         st = ST[style] if isinstance(style, str) else style
-        p = Paragraph(txt, st)
+        p = Paragraph(sub(txt), st)
         _, h = p.wrap(w, 10000)
         p.drawOn(self.c, x, self.Y(t + h))
         return h
 
     def ph(self, w, txt, style="body"):
         st = ST[style] if isinstance(style, str) else style
-        return Paragraph(txt, st).wrap(w, 10000)[1]
+        return Paragraph(sub(txt), st).wrap(w, 10000)[1]
 
     def img(self, name, x, t, w, h, mode="cover", r=0, stroke=None, anchor=0.5):
         """mode cover = crop to fill box; contain = fit inside box (centered)."""
@@ -176,7 +184,7 @@ class Page:
         c.setFillColor(white)
         c.rect(0, 0, W, H, stroke=0, fill=1)
         self.text(MX, HDR_BASE, "DAKICKBACK LLC", "Body-B", 10, NAVY, cs=0.6)
-        self.text(W - MX, HDR_BASE, "PRIVATE DISCUSSION / DR. ISH / OCT 2026", "Body-B", 8, BLUE, "r", cs=0.5)
+        self.text(W - MX, HDR_BASE, "PRIVATE DISCUSSION / @@INVU@@ / OCT 2026", "Body-B", 8, BLUE, "r", cs=0.5)
         self.line(MX, HDR_RULE, W - MX, HDR_RULE, NAVY, 1.5)
         self.text(MX, TRACK_BASE, tracker, "Body-B", 9, BLUE, cs=0.5)
         self.line(MX, FOOT_RULE, W - MX, FOOT_RULE, LINE, 0.75)

@@ -1,15 +1,24 @@
-"""Build the DKB x Dr. Ish investor PDF.  Usage: python3 build_deck.py [out.pdf]"""
+"""Build the DKB investor PDF.  Usage: python3 build_deck.py [out.pdf] [--investor "Dr. Chad"]"""
+import argparse
+import os
 import sys
+
+ap = argparse.ArgumentParser(description="Build the DKB investor deck PDF")
+ap.add_argument("out", nargs="?", default=None, help="output PDF path")
+ap.add_argument("--investor", default="Dr. Ish", help="investor name as it should read, e.g. 'Dr. Chad'")
+args = ap.parse_args()
+os.environ["DKB_INVESTOR"] = args.investor   # must be set before dkb_lib is imported
+
 from reportlab.pdfgen import canvas
-from dkb_lib import W, H, Page
+from dkb_lib import W, H, Page, sub
 import pages_a, pages_b, pages_c, pages_d
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "DKB_Dr_Ish_Investor_Deck.pdf"
-ONLY = sys.argv[2:] 
+OUT = args.out or "DKB_%s_Investor_Deck.pdf" % args.investor.replace(".", "").replace(" ", "_")
+
 
 def build():
     c = canvas.Canvas(OUT, pagesize=(W, H))
-    c.setTitle("DaKickBack (DKB) - $2M Launch Opportunity - Investor Presentation - Dr. Ish")
+    c.setTitle(sub("DaKickBack (DKB) - $2M Launch Opportunity - Investor Presentation - @@INV@@"))
     c.setAuthor("DAKICKBACK LLC")
     c.setSubject("Confidential investor discussion - October 2026")
     p = Page(c)

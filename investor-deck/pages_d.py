@@ -183,7 +183,7 @@ def page_t3(p):
     t = CONTENT_TOP
     t = p.title(t, "FROM PILOT TO PARTNER", "WHERE TELERIC IS TODAY, THE DEAL FRAMEWORK, AND THE FINE PRINT",
                 "Teleric is early. The upside is real because the technology gap is real, and the honest picture below is what lets "
-                "Dr. Ish value it correctly.", size=34)
+                "@@INV@@ value it correctly.", size=34)
     # deployment photos
     ih = 144
     ws = [200, 96, 96, 96, 152]

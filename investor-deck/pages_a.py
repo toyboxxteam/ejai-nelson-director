@@ -17,7 +17,7 @@ def page01(p):
     p.img("i-002.jpg", MX + 64, 136, 72, 40, "contain")
     p.line(MX + 152, 128, MX + 152, 176, LINE, 1)
     p.text(MX + 168, 148, "CONFIDENTIAL / OCTOBER 2026", "Body-B", 8.5, BLUE, cs=0.6)
-    p.text(MX + 168, 164, "PREPARED FOR DR. ISH", "Body-B", 8.5, NAVY, cs=0.6)
+    p.text(MX + 168, 164, "PREPARED FOR @@INVU@@", "Body-B", 8.5, NAVY, cs=0.6)
 
     # navy banner
     p.rect(MX, 200, CW, 96, fill=NAVY, r=6)
@@ -41,8 +41,8 @@ def page01(p):
     nh = 552 - ny
     p.rect(rx, ny, rw, nh, fill=ICE, r=4)
     p.rect(rx, ny, 4, nh, fill=BLUE)
-    p.text(rx + 16, ny + 18, "A PERSONAL NOTE TO DR. ISH", "Body-B", 8, NAVY, cs=0.5)
-    p.para(rx + 16, ny + 26, rw - 32, "Dr. Ish, we sincerely appreciate your generous $2 million offer to help bring DKB "
+    p.text(rx + 16, ny + 18, "A PERSONAL NOTE TO @@INVU@@", "Body-B", 8, NAVY, cs=0.5)
+    p.para(rx + 16, ny + 26, rw - 32, "@@INV@@, we sincerely appreciate your generous $2 million offer to help bring DKB "
            "to market. We intend to earn that trust through controlled draws, measurable launch milestones, "
            "artist-led audience growth and transparent investor reporting. This proposal does not seek more than "
            "$2 million.", "card")
@@ -524,11 +524,11 @@ def page03b_pr(p, t):
     ty = t + 20 + h + 14
     hh = p.card_h(w0, "GLOBAL LANDMARK CAMPAIGN",
                   "Dubai team visual campaign and Forbes feature spotlighting Malcolm “FRQNZY” Henderson, Teddy Riley, "
-                  "Dr. Ish, and Evan Shive launching a sovereign entertainment ecosystem. Editorial placements follow each "
+                  "@@INV@@, and Evan Shive launching a sovereign entertainment ecosystem. Editorial placements follow each "
                   "outlet's process and are not guaranteed.", 12)
     p.card(x0, ty, w0, hh, "GLOBAL LANDMARK CAMPAIGN",
            "Dubai team visual campaign and Forbes feature spotlighting Malcolm “FRQNZY” Henderson, Teddy Riley, "
-           "Dr. Ish, and Evan Shive launching a sovereign entertainment ecosystem. Editorial placements follow each "
+           "@@INV@@, and Evan Shive launching a sovereign entertainment ecosystem. Editorial placements follow each "
            "outlet's process and are not guaranteed.", accent=GOLD, fill=ICE, bar="left")
     t = max(t + ih, ty + hh)
     t = s8(t + 16)

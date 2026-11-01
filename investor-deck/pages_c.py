@@ -256,7 +256,7 @@ def page_akai(p):
         bar="top", fill=PALE)
     t += hh
     t = s8(t + 16)
-    t += p.section_bar(t, "GUARDRAILS BUILT INTO THE DEAL", "PROTECTING DKB, TEDDY AND DR. ISH")
+    t += p.section_bar(t, "GUARDRAILS BUILT INTO THE DEAL", "PROTECTING DKB, TEDDY AND @@INVU@@")
     hh = p.cards_row(MX, t, CW, [
         ("LICENSED DATA ONLY", "AI features trained and served only on cleared stems and partner catalogs, with written provenance, so "
          "the product can be sold to labels, brands and retailers."),
@@ -432,6 +432,6 @@ def page_value2(p):
     p.rect(MX, t, CW, 72, fill=NAVY, r=6)
     p.text(MX + 24, t + 30, "THE HONEST ONE-LINER", "Body-B", 8.5, SKY, cs=0.8)
     p.para(MX + 24, t + 38, CW - 48, "$2M launches DKB and buys evidence across 19 IP lines. What it is worth is decided by the "
-           "gates it clears, measured monthly and reported to Dr. Ish.", S("ol", 11.5, 15, white, "Body-B"))
+           "gates it clears, measured monthly and reported to @@INV@@.", S("ol", 11.5, 15, white, "Body-B"))
     t += 72
     p.check(t, "page_value2")
