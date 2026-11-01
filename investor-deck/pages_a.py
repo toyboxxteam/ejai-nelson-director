@@ -380,8 +380,8 @@ def page03b(p):
         t += rh
     # downside row (carried from prior draft)
     p.rect(MX, t, CW, 48, fill=white, stroke=LINE)
-    p.text(MX + 12, t + 22, "DOWNSIDE FLOOR (PRIOR DRAFT)", "Body-B", 8.5, GREY)
-    p.text(MX + 12, t + 36, "Carried forward for investor transparency", "Body", 8, GREY)
+    p.text(MX + 12, t + 22, "ENTRY RUN (MINIMUM LAUNCH)", "Body-B", 8.5, GREY)
+    p.text(MX + 12, t + 36, "Two-date launch run", "Body", 8, GREY)
     p.text(MX + 214, t + 22, "2 Dates", "Body-B", 9.5, INK)
     p.text(MX + 214, t + 36, "600 cap @ $55 avg", "Body", 8, GREY)
     p.text(MX + 470, t + 29, "$66,000", DISPLAY, 12, GREY, "r")

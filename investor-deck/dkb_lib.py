@@ -12,7 +12,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-INVESTOR = os.environ.get("DKB_INVESTOR", "Dr. Ish")   # set via build_deck.py --investor
+INVESTOR = os.environ.get("DKB_INVESTOR", "Dr. Chad")   # set via build_deck.py --investor
 
 
 def sub(s):

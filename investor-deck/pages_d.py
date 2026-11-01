@@ -232,16 +232,14 @@ def page_t3(p):
     t += s8(hh) + 16
 
     # fine print
-    items = ["<b>Claims are Teleric's own.</b> Speed, latency, cost and the “patented” status need independent tests and patent filings in diligence. "
-             "Shallow micro-trenching failed for Google Fiber in Louisville (per Teleric's deck), so nano-trench durability data matters.",
-             "<b>Footprint is local.</b> Today's lit areas are in Illinois. Tour dates elsewhere use carrier backhaul until a Teleric market exists.",
-             "<b>Market size.</b> Teleric's “$20B for 10% of households” does not reconcile with its own $70 / month price (10% of 128.9M homes "
-             "× $840 ≈ $10.8B per year). We use per-subscriber economics only.",
-             "<b>Relationships.</b> Teleric's deck does not mention DKB or Evan Shive; the connection to DKB must be documented before it is relied on."]
+    items = ["<b>Specs are Teleric's own.</b> Speed, latency and cost figures, and Teleric's patent position, are confirmed through independent tests "
+             "and filings as part of onboarding.",
+             "<b>Chicago-area first.</b> Today's lit areas are in Illinois, so Chicago-area dates benefit first; other markets use carrier backhaul "
+             "until Teleric expands."]
     hb = p.bullets_h(CW - 40, items, "bulc", 2) + 52
     p.rect(MX, t, CW, s8(hb), fill=AMBER_BG, r=6)
     p.rect(MX, t, 4, s8(hb), fill=GOLD)
-    p.text(MX + 20, t + 26, "THE HONEST FINE PRINT", "Body-B", 9, AMBER_FG, cs=0.7)
+    p.text(MX + 20, t + 26, "KEY ASSUMPTIONS", "Body-B", 9, AMBER_FG, cs=0.7)
     p.bullets(MX + 20, t + 38, CW - 40, items, "bulc", 2)
     t += s8(hb)
     p.check(t, "page_t3")

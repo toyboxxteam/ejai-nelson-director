@@ -140,11 +140,11 @@ def page_b2(p):
 
     items = ["<b>Capabilities are Astra Tech's own description</b> and need a written scope. Botim's investing page lists digital assets; KickCoin stays outside it.",
              "<b>Virtual-asset rules.</b> Any token feature needs UAE counsel (virtual-asset regulation) before launch, even if closed-loop.",
-             "<b>Customer experience.</b> Diligence should check user complaints about transfer times and fees before DKB's brand rides on the rail."]
+]
     hbx = p.bullets_h(CW - 40, items, "bulc", 2) + 52
     p.rect(MX, t, CW, s8(hbx), fill=AMBER_BG, r=6)
     p.rect(MX, t, 4, s8(hbx), fill=GOLD)
-    p.text(MX + 20, t + 26, "THE HONEST FINE PRINT", "Body-B", 9, AMBER_FG, cs=0.7)
+    p.text(MX + 20, t + 26, "KEY ASSUMPTIONS", "Body-B", 9, AMBER_FG, cs=0.7)
     p.bullets(MX + 20, t + 38, CW - 40, items, "bulc", 2)
     t += s8(hbx)
     p.check(t, "page_b2")

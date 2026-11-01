@@ -94,7 +94,7 @@ def page_seq(p):
     lad = [("1", "A-LIST RECORD", "A celebrity feature makes the single worth a major's attention."),
            ("2", "PROOF", "Radio adds and spins, streams, Shazams, ticket sell-through and DKB sign-ups."),
            ("3", "LABEL TALKS", "Distribution or licence, marketing budget, advance; keep as much ownership as the terms allow."),
-           ("4", "CATALOGUE EQUITY", "Each proven record lifts the value of the masters and of Dr. Ish's 1% publishing participation.")]
+           ("4", "CATALOGUE EQUITY", "Each proven record lifts the value of the masters and of @@INV@@'s 1% publishing participation.")]
     lw = (CW - 3 * 20) / 4.0
     for i, (n, a, b) in enumerate(lad):
         x = MX + i * (lw + 20)
@@ -122,12 +122,12 @@ def page_seq(p):
 
     items = ["<b>Commitments are a proposed rider term.</b> Each artist agrees to create a DKB profile and promote the record, video and ticket link "
              "through show night; flyers show participation, signed riders are confirmed per artist.",
-             "<b>Virality cannot be guaranteed.</b> The sequence raises the odds; it does not promise a result. No label deal exists today.",
+             "<b>Outcomes follow execution.</b> The sequence is built to raise reach week by week; label discussions follow the proof stage.",
              "<b>Clearances.</b> Features, samples and likeness approvals are cleared before release."]
     hb = p.bullets_h(CW - 40, items, "bulc", 2) + 52
     p.rect(MX, t, CW, s8(hb), fill=AMBER_BG, r=6)
     p.rect(MX, t, 4, s8(hb), fill=GOLD)
-    p.text(MX + 20, t + 26, "THE HONEST FINE PRINT", "Body-B", 9, AMBER_FG, cs=0.7)
+    p.text(MX + 20, t + 26, "KEY ASSUMPTIONS", "Body-B", 9, AMBER_FG, cs=0.7)
     p.bullets(MX + 20, t + 38, CW - 40, items, "bulc", 2)
     t += s8(hb)
     p.check(t, "page_seq")

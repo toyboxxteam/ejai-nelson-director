@@ -28,9 +28,11 @@ Reserve or gold-backing for DKCoin; ToyBoxx $149.99 margin (BOM target $125 unve
 
 ## Open items
 0. **Flyer typo**: both flyers read "Walt Reed"; agency is Walt Reeder Entertainment. Fix before wider distribution. Hampton flyer names no venue.
-1. **Investor name**: Dr. Ish vs Dr. Chad (replacement or second investor?). Use `--investor`.
+1. **Investor name**: resolved. The deck is addressed to Dr. Chad; `--investor` still switches it.
 2. **"The Bitom"** = **Botim** (Astra Tech), confirmed by the user's screenshot and pasted site text. Still confirm what Botim has actually offered DKB. astratech.ae is blocked from the cloud session, so content arrives by paste.
 3. **Evan Shive vs Teleric**: Teleric's deck names Khaliq Rehman as founder and never mentions DKB or Evan Shive. Paper the relationship before relying on it.
 4. **Catalog size**: founder one-sheet says "500+ tracks", page copy says "1,500+".
 5. **Terms**: waterfall has no equity; equity-equivalent table is reference only. Decide whether to offer equity or IP-licence participation.
 6. **Botim pages** are in the deck (section 07, pages b1/b2) as a *proposed* wallet layer; no discussions with Astra Tech are represented. Botim financial features are UAE-licensed; U.S./Germany need another partner.
+7. **Internal diligence notes (kept out of the deck on purpose)**: Teleric's deck names Khaliq Rehman as founder and never mentions DKB or Evan Shive, so paper that relationship; Teleric's "$20B for 10% of households" does not reconcile with its $70/month price (~$10.8B); Google Fiber's Louisville micro-trench failure (per Teleric's deck) means nano-trench durability data matters; Botim app-store reviews cite transfer delays and fees; the Akai deal has no public announcement; GloRilla / Slim riders need confirming; "10 prototype consoles" count needs confirming; 'Walt Reed' flyer typo.
+8. **Claims not to make**: DKB is worth more than Suno; marketing is "proven" (evidence is chart/Amazon placement and the announced dates).

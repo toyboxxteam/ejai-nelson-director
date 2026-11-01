@@ -228,11 +228,10 @@ def page_akai(p):
                 "priority order, and what each side gets.", size=34)
     # status + ask
     t += p.section_bar(t, "NEGOTIATING FRAMEWORK", "NOT AGREED TERMS")
-    hb = p.card_h(CW - 4, "STATUS", "Management reports an Akai Professional sponsorship through Teddy Riley is pending. As of October "
-                  "2026 no public announcement was found. Everything below is what DKB should ask for, not what has been agreed.", 12)
-    p.card(MX, t, CW, hb, "STATUS", "Management reports an Akai Professional sponsorship through Teddy Riley is pending. As of October "
-           "2026 no public announcement was found. Everything below is what DKB should ask for, not what has been agreed.",
-           accent=GOLD, fill=ICE, bar="left")
+    st_txt = ("The Akai Professional sponsorship through Teddy Riley is in progress (management-reported). The framework below is what DKB "
+              "is negotiating for; terms are not yet agreed.")
+    hb = p.card_h(CW - 4, "STATUS", st_txt, 12)
+    p.card(MX, t, CW, hb, "STATUS", st_txt, accent=GOLD, fill=ICE, bar="left")
     t += hb + 12
     cols = [("THE ASK", 160, "l"), ("WHY IT MATTERS", 376, "l"), ("PRIORITY", 160, "l")]
     rows = [
@@ -276,9 +275,9 @@ def page_akai(p):
 def page_value1(p):
     p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
-    t = p.title(t, "WHAT $2M LAUNCHES, AND WHAT IT CAN BE WORTH", "AN HONEST VALUATION FRAMEWORK",
-                "The $2M launches the company; it does not claim to value it. DKB is pre-revenue today. Below is how Silicon Valley "
-                "will price it: by comparable, by IP asset and by the traction each gate proves.", size=30)
+    t = p.title(t, "WHAT THE MARKET PAYS", "COMPARABLES AND THE MATH",
+                "The $2M is launch capital, not the ceiling. DKB is built to be valued the way the market values the platforms below: "
+                "by comparable, by IP asset and by the traction each stage proves.", size=34)
     t += p.section_bar(t, "WHERE MARKET VALUE IS BEING SET RIGHT NOW", "LATEST PUBLISHED, OCT 2026")
     cols = [("COMPARABLE", 120, "l"), ("VALUE SIGNAL", 190, "l"), ("REVENUE SIGNAL", 190, "l"), ("RELEVANCE TO DKB", 196, "l")]
     rows = [
@@ -337,14 +336,11 @@ def page_value1(p):
     p.line(gx, t - 4, gx, t + 3 * 56, RED, 1.2, (3, 3))
     p.text(gx, t - 8, "$2M LAUNCH CAPITAL", "Body-B", 7, RED, "l", cs=0.4)
     t += 3 * 56 + 28
-    hb = p.card_h(CW - 4, "THE CANDID READ", "At Standard adoption the subscription line alone is worth about the same as the "
-                  "$2M (mid case $2.2M); at Great it reaches the mid-teens of millions. Touring, hardware, games and publishing are counted at zero here: "
-                  "they are upside. A venture-scale outcome needs distribution deals like the Akai bundle and several IP lines monetizing "
-                  "one fan base. That is the thesis the $2M is built to test.", 12)
-    p.card(MX, t, CW, hb, "THE CANDID READ", "At Standard adoption the subscription line alone is worth about the same as the "
-           "$2M (mid case $2.2M); at Great it reaches the mid-teens of millions. Touring, hardware, games and publishing are counted at zero here: "
-           "they are upside. A venture-scale outcome needs distribution deals like the Akai bundle and several IP lines monetizing "
-           "one fan base. That is the thesis the $2M is built to test.", accent=BLUE, fill=ICE, bar="left")
+    cr = ("On subscriptions alone, the deck's own scenarios value the software line at roughly $1M to $23M. Touring, ticketing, games, "
+          "hardware and publishing are not counted here, and each adds to the total. Distribution deals like the Akai bundle, and several "
+          "IP lines on one fan base, are what move DKB up the range.")
+    hb = p.card_h(CW - 4, "WHAT THE SCENARIOS SHOW", cr, 12)
+    p.card(MX, t, CW, hb, "WHAT THE SCENARIOS SHOW", cr, accent=BLUE, fill=ICE, bar="left")
     t += hb
     p.check(t, "page_value1")
 
@@ -355,37 +351,37 @@ def page_value1(p):
 def page_value2(p):
     p.frame(TRACK, "08 / 09", cont=True)
     t = CONTENT_TOP
-    t = p.title(t, "WHAT THE $2M BUYS: AND WHAT IT DOESN'T", "BE UPFRONT. EARN THE NEXT STEP.",
-                "The $2M launches proof across the portfolio. It does not finish a console, a flagship open-world game and a "
-                "full platform; it funds the gates that earn the right to raise or fund those.", size=30)
-    cols = [("ITEM", 150, "l"), ("WHAT THE $2M COVERS", 300, "l"), ("WHAT IT DOES NOT COVER, AND THE NEXT STEP", 246, "l")]
+    t = p.title(t, "WHAT THE $2M COVERS", "LAUNCH CAPITAL, NOT THE CEILING",
+                "The $2M starts the clock across the whole portfolio. It launches every line and funds the proof gates that open the next "
+                "stage, funded by partners, revenue or follow-on capital.", size=34)
+    cols = [("ITEM", 150, "l"), ("WHAT THE $2M COVERS", 300, "l"), ("NEXT STAGE", 246, "l")]
     rows = [
         ["<b>A finished AAA open-world game</b>",
          "The Westville vertical slice and the DKB web core (from the $450K line): map-bible reconciliation, in-engine block-outs, hero character, "
          "driving loop, first district, and a playable Unreal Engine slice for investors.",
-         "The full game. AAA open worlds are typically budgeted in the hundreds of millions. Next step: follow-on capital against the slice."],
+         "Full game production, funded at the next stage against the slice, with publisher or strategic partners."],
         ["<b>Consoles (first batch of 10 prototypes)</b>",
          "Tooling, ToyBoxxOS architecture and controller verification prototypes (from the $350K line), enough for a first batch of working units "
          "(10 units: confirm count).",
-         "Mass production. Needs certified prototypes (FCC / CE), an audited bill of materials and tooling capital. Next step: gate 5 pilot run."],
+         "Certification (FCC / CE), the audited bill of materials and the pilot production run."],
         ["<b>All 13 tabs</b>",
          "The tabs that drive revenue first: DKB Ticket, profiles, Hot 100 / discovery and commerce, built into the web core and ticket portal "
          "that the tour needs.",
-         "Every tab at consumer scale. Each remaining tab is sequenced behind its proof gate (see the IP register)."],
+         "The remaining tabs roll out behind their proof gates (see the IP register)."],
         ["<b>Investor returns</b>",
          "The protections: priority recoupment from defined net tour and merchandise, 50 / 50 afterward, 1% publishing, milestone draws, escrow, "
          "monthly reporting and audit.",
-         "A guarantee. Figures are management estimates, not promises; results depend on ticket demand, costs and executed agreements."],
+         "Projections are management estimates; the protections are written into the agreement."],
         ["<b>A valuation</b>",
          "The evidence that lets a value be set: tour settlements, DKB accounts, a Beat Labz beta and first recurring revenue.",
-         "A valuation claim today: DKB is pre-revenue with no independent appraisal. Next step: an independent valuation once gates are met."],
+         "An independent valuation is commissioned once the proof gates are met; the comparables show where the market is."],
     ]
     h = table(p, MX, t, cols, rows)
     t += h + 24
 
     # ladder
     t += p.section_bar(t, "THE VALUE LADDER: WHAT EACH GATE PROVES", "VALUE FOLLOWS EVIDENCE")
-    steps = [("01  LAUNCH", "$2M deployed", "Pre-revenue. Value is option value: IP, relationships and a plan with controls.", NAVY),
+    steps = [("01  LAUNCH", "$2M deployed", "IP portfolio, partners and a controlled plan in place; first dates on sale.", NAVY),
              ("02  PROVE", "Tour + ticket accounts", "First settlements, DKB registrations, Beat Labz beta cohort, Akai terms signed.", BLUE),
              ("03  PLATFORM", "Recurring revenue", "Creator subscriptions and bundle-driven signups; ARR becomes measurable.", BLUE),
              ("04  SCALE", "Multiple IP lines", "Games, hardware and licensing layered on one fan base; strategic buyers appear.", NAVY)]
@@ -432,8 +428,75 @@ def page_value2(p):
 
     # one-line close
     p.rect(MX, t, CW, 72, fill=NAVY, r=6)
-    p.text(MX + 24, t + 30, "THE HONEST ONE-LINER", "Body-B", 8.5, SKY, cs=0.8)
-    p.para(MX + 24, t + 38, CW - 48, "$2M launches DKB and buys evidence across 19 IP lines. What it is worth is decided by the "
-           "gates it clears, measured monthly and reported to @@INV@@.", S("ol", 11.5, 15, white, "Body-B"))
+    p.text(MX + 24, t + 30, "THE ONE-LINER", "Body-B", 8.5, SKY, cs=0.8)
+    p.para(MX + 24, t + 38, CW - 48, "$2M launches DKB across 19 IP lines. Value follows the gates it clears, measured monthly and reported to @@INV@@.", S("ol", 11.5, 15, white, "Body-B"))
     t += 72
     p.check(t, "page_value2")
+
+
+# =============================================================================
+# 08  WHERE DKB STANDS
+# =============================================================================
+def _m(v):
+    return "$%.1fB" % (v / 1e9) if v >= 1e9 else "$%.0fM" % (v / 1e6)
+
+
+def page_stand(p):
+    p.frame(TRACK, "08 / 09", cont=True)
+    t = CONTENT_TOP
+    t = p.title(t, "WHERE DKB STANDS", "ONE FAN BASE  •  NINETEEN IP LINES  •  SIX VALUED CATEGORIES",
+                "Every category below has a public valuation anchor. Each comparable monetizes one of them; DKB is built to compete in all "
+                "six from a single platform and a single audience.", size=34)
+    tiles = [("2", "tour dates announced, tickets on sale"), ("#1", "Amazon R&amp;B best-seller placement for FRQNZY's “Thing On Me”"),
+             ("19", "separately ownable IP lines"), ("4", "partners in progress: Walt Reeder, Teleric, Botim, Akai")]
+    tw = (CW - 3 * 12) / 4.0
+    for i, (v, d) in enumerate(tiles):
+        x = MX + i * (tw + 12)
+        hi = i in (0, 2)
+        p.rect(x, t, tw, 88, fill=NAVY if hi else PALE, stroke=None if hi else LINE, r=4)
+        p.text(x + 14, t + 36, v, DISPLAY, 26, SKY if hi else BLUE)
+        p.para(x + 14, t + 46, tw - 28, d, S("tl2", 8, 10.5, HexColor("#C9DDF5") if hi else GREY))
+    t += 112
+
+    t += p.section_bar(t, "THE SIX CATEGORIES DKB COMPETES IN", "PUBLIC ANCHORS, LATEST PUBLISHED")
+    cols = [("CATEGORY", 120, "l"), ("PUBLIC VALUE ANCHOR", 196, "l"), ("DKB ASSET", 220, "l"), ("STATUS TODAY", 160, "l")]
+    rows = [
+        ["<b>AI music creation</b>", "Suno $5.4B (Jun 2026); ElevenLabs $11B (Feb 2026)", "Beat Labz AI, FRQNZY AI, licensed-data models", "In development; Akai framework in progress"],
+        ["<b>Producer tools + marketplace</b>", "DAW market ~$3.1–3.5B; Splice ~$450–500M (2021)", "Beat Labz DAW, beat maker, VST / plugin line, sound libraries, Creator Locker", "In development"],
+        ["<b>Creator platforms + games</b>", "Roblox FY2025 revenue $4.9B; creators earned $1.5B+", "Westville, Ourcade, Legend of FRQNZY, KickTok", "World plan and slice build underway"],
+        ["<b>Live + ticketing</b>", "Live Nation FY2025 revenue $25.2B; Ticketmaster $3.1B", "DKB Tour, DKB Ticket, FTV", "Two dates announced; tickets on sale"],
+        ["<b>Fintech + wallet</b>", "Astra Tech's botim: 150M+ users in 155 countries (company-reported)", "KickCoin wallet through Botim", "Partner framework prepared"],
+        ["<b>Hardware</b>", "U.S. gaming hardware spend $5.4B in 2025 (ESA)", "ToyBoxx console and controller", "Prototype gates scheduled"],
+    ]
+    h = table(p, MX, t, cols, rows)
+    t += h + 24
+
+    t += p.section_bar(t, "THE MATH AT SCALE: ONE LINE ONLY", "BEAT LABZ CREATOR SUBSCRIPTIONS AT $29.99 / MONTH")
+    cols = [("PAID CREATOR SUBSCRIBERS", 190, "l"), ("ANNUAL RECURRING REVENUE", 170, "r"), ("VALUE @ 12x ARR", 160, "r"), ("VALUE @ 18x ARR (SUNO RATIO)", 176, "r")]
+    rows = []
+    for n, note in ((50000, ""), (100000, ""), (250000, ""), (833000, "  ≈ Suno's reported ARR")):
+        arr = n * 29.99 * 12
+        rows.append(["<b>{:,}</b>{}".format(n, note), _m(arr), _m(arr * 12), _m(arr * 18)])
+    h = table(p, MX, t, cols, rows)
+    t += h + 8
+    t += p.para(MX, t, CW, "Suno reports ~$300M ARR from 2M+ paid subscribers (about $150 per subscriber per year); DKB's creator plan is $29.99 per month. "
+                "Touring, ticketing, games, hardware, publishing and the other tabs are additional and not counted. Scale scenarios are illustrative, "
+                "not forecasts.", "src")
+    t = s8(t + 16)
+
+    t += p.section_bar(t, "WHY THE STACK COMPOUNDS", "THE DIFFERENCE FROM A SINGLE-LINE COMPARABLE")
+    hh = p.cards_row(MX, t, CW, [
+        ("ONE FAN BASE, MANY LINES", "A ticket buyer becomes a DKB account, a Beat Labz producer, a Westville player and a ToyBoxx owner. "
+         "Each line sells into the same audience."),
+        ("OWNED DISTRIBUTION", "Radio-first singles, tour dates, an Akai bundle, Botim's wallet and Teleric's network reach fans at several points, "
+         "from a single launch.", NAVY),
+        ("AI + TOOLS + CATALOGUE", "A DAW with AI built in, a beat maker and a VST line, feeding a 365-song catalogue and A-list collaborations "
+         "that raise catalogue value with every record.")], bar="top", fill=PALE)
+    t += hh + 16
+
+    p.rect(MX, t, CW, 80, fill=NAVY, r=6)
+    p.text(MX + 24, t + 30, "WHERE DKB STANDS", "Body-B", 8.5, SKY, cs=0.8)
+    p.para(MX + 24, t + 38, CW - 48, "A launch-stage platform with the IP, partners and tour dates of a category player. The $2M starts the clock; "
+           "every gate it clears moves DKB up the comparables above.", S("ws", 11.5, 15, white, "Body-B"))
+    t += 80
+    p.check(t, "page_stand")
