@@ -85,8 +85,8 @@ IP = [
      "Design • Patents (TBD) • OS", "Functional prototype; BOM audit"),
     ("Teleric", "Infrastructure", "High-density venue Wi-Fi, edge delivery and live streaming.", "Venue connectivity / CDN",
      "Know-how • Contracts", "Live at first tour date"),
-    ("Payments Rail", "Advanced", "Licensed P2P payouts and creator royalties.", "Cash App / Venmo",
-     "Licenses • Software", "Licensed partner signed"),
+    ("Payments Rail + KickCoin", "Advanced", "Licensed wallet (Botim proposed), closed-loop KickCoin, P2P payouts.", "Cash App / Venmo",
+     "Licenses • Software", "Botim wallet pilot (UAE) signed"),
 ]
 
 

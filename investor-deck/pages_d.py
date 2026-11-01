@@ -6,7 +6,7 @@ from reportlab.lib.colors import HexColor, white
 from dkb_lib import *
 from pages_c import table, DARK, AMBER_BG, AMBER_FG
 
-TRACK = "07 / TELERIC: DKB'S OWN NETWORK"
+TRACK = "07 / INFRASTRUCTURE: TELERIC (NETWORK) + BOTIM (MONEY)"
 IDX = "07 / 09"
 
 

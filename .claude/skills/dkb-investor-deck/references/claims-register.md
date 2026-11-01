@@ -16,6 +16,8 @@
 | Akai publicly featured Teddy Riley on the MPC XL; Akai x Beatclub Timbaland Edition MPC Live 2 (Apr 2023) | Akai / trade press |
 | Walt Reeder 2026 roster (30 pp) includes the named artists except Krayzie Bone, Teddy Riley, AMG Twins; "$10K-$15K or less" list is on pp. 29-30 | User-supplied PDF |
 
+| Astra Tech (per astratech.ae, pasted by user Nov 2026): est. 2022; parent of botim; 150M+ users in 155 countries (company claim); acquired PayBy Aug 2022, botim Jan 2023; $500M raise led by G42 Dec 2022; botim 3.0 May 2023; botim finance first UAE fintech with full CBUAE Finance Company License Jul 2024; PayBy -> botim money for business and CashNow -> botim finance Jul 2025; botim invest lists gold, bonds, digital assets | Company website; capabilities are the company's own description |
+
 ## Management-reported (label as such)
 Slim (112) and AMG Twins booked; Teddy Riley producing "All Good" with Ty Dolla $ign; Billboard chart appearances (exact weeks pending); 1,500+ master vault; tour net-to-DKB estimates ($140K / $750K / $2.15M / $4.2M); Walt Reeder wholesale pricing; Live Nation as target channel; Akai sponsorship via Teddy Riley (pending, no public announcement found); Teleric specs (1 Gbps symmetric, ~5 ms, ~$500/home, nano-trench, "patented").
 
@@ -24,8 +26,8 @@ Reserve or gold-backing for DKCoin; ToyBoxx $149.99 margin (BOM target $125 unve
 
 ## Open items
 1. **Investor name**: Dr. Ish vs Dr. Chad (replacement or second investor?). Use `--investor`.
-2. **"The Bitom"** is believed to be **Botim** (Astra Tech); confirm spelling and what was actually offered. astratech.ae was blocked from the cloud session; screenshot showed botim Connect / Money (Pay, Credit, Invest, Money) / Finance.
+2. **"The Bitom"** = **Botim** (Astra Tech), confirmed by the user's screenshot and pasted site text. Still confirm what Botim has actually offered DKB. astratech.ae is blocked from the cloud session, so content arrives by paste.
 3. **Evan Shive vs Teleric**: Teleric's deck names Khaliq Rehman as founder and never mentions DKB or Evan Shive. Paper the relationship before relying on it.
 4. **Catalog size**: founder one-sheet says "500+ tracks", page copy says "1,500+".
 5. **Terms**: waterfall has no equity; equity-equivalent table is reference only. Decide whether to offer equity or IP-licence participation.
-6. **Botim page** not yet added to the deck (design agreed in chat: botim money as licensed wallet, KickCoin spend-only, UAE/MENA leg).
+6. **Botim pages** are in the deck (section 07, pages b1/b2) as a *proposed* wallet layer; no discussions with Astra Tech are represented. Botim financial features are UAE-licensed; U.S./Germany need another partner.

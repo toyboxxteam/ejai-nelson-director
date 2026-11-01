@@ -592,7 +592,7 @@ def appx_notice(p):
         ("SOURCES", "ESA (2025 data, restated Mar 2026); IFPI Global Music Report 2026; Live Nation FY2025 (Feb 2026); Suno Series D (Jun 2026) and "
          "ElevenLabs Series D (Feb 2026) per trade press; Roblox FY2025 annual report; published DAW market estimates ($2.2\u20134.4B); Walt Reeder "
          "Entertainment 2026 roster (R&amp;B, Hip Hop &amp; Rap, $10K–$15K lists); DKB management October 2026 tour update; "
-         "Teleric pitch deck 2025 (FCC Form 477 data as cited by Teleric); user-supplied founder photographs, chart captures, tour artwork and game / hardware designs. Fortnite and Roblox "
+         "Teleric pitch deck 2025 (FCC Form 477 data as cited by Teleric); Astra Tech website astratech.ae (Botim, as supplied by the user, Nov 2026); user-supplied founder photographs, chart captures, tour artwork and game / hardware designs. Fortnite and Roblox "
          "attendance figures are as publicly reported by Epic Games and Roblox in 2020.")]
     for a, b in blocks:
         h = p.card_h(CW - 4, a, b, 14, "cardk")
